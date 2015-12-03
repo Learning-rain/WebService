@@ -8,10 +8,12 @@ and open the template in the editor.
     <head>
         <meta charset="UTF-8">
         <title></title>
+        <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
     </head>
-    <body>
-        <?php
-        // put your code here
-        ?>
+    <body class="container">
+        <div class="row">
+            <?php include 'sql.php'; ?>
+        </div>
     </body>
 </html>
