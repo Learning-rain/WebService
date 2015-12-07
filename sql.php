@@ -1,5 +1,5 @@
 <?php
-$servername = "52.6.125.4";
+$servername = "localhost";
 $username = "root";
 $password = "amazon5web1";
 $dbname = "bd_learning";
