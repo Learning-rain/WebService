@@ -79,19 +79,14 @@ and open the template in the editor.
                 require 'conexion.php';
                 $sqlconsulta = "select * from test";
                 if ($conn->query($sqlconsulta) === TRUE) {
-                    echo "Registro Agregado";
+                    echo '<table>';
+                    echo '    <tr>';
+                    echo '        <td>' . print_r($sqlconsulta) . '</td>';
+                    echo '    </tr>';
+                    echo '</table>';
                 } else {
                     echo "Error: " . $sqlconsulta . "<br>" . $conn->error;
                 }
-                
-                echo '<table>';
-                echo '    <tr>';
-                echo '        <td>'.$sqlconsulta['titulo'].'</td>';
-//                echo '        <td>'.$sqlconsulta->.'</td>';                
-                echo '    </tr>';
-                echo '</table>';
-                
-                $conn->close();
                 ?>
             </div>
         </div>
