@@ -1,5 +1,5 @@
 <?php
-//$id = $_POST('id');
+$id = $_POST('id');
 $titulo = $_POST['titulo'];
 $descripcion = $_POST['descripcion'];
 $tabla = $_POST['tabla'];
@@ -17,7 +17,8 @@ require 'conexion.php';
 
 
     $sql = "INSERT INTO test
-            (`titulo`,
+            (`id`,
+            `titulo`,
             `descripcion`,
             `tabla`,
             `icono`,
@@ -26,7 +27,7 @@ require 'conexion.php';
             `num_preguntas`,
             `ultima_actualiza`)
             VALUES
-            ('$titulo', '$descripcion', '$tabla', '$icono', '$autor', '$num_preguntas', '$ultima_actualiza');";
+            ('$id', '$titulo', '$descripcion', '$tabla', '$icono', '$autor', '$num_preguntas', '$ultima_actualiza');";
 
     if ($conn->query($sql) === TRUE) {
         echo "Registro Agregado";
