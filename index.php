@@ -24,7 +24,7 @@ and open the template in the editor.
             <?php // include 'base/sql.php'; ?>
             <div class="col-md-12">
                 <div class="col-md-5"></div>
-                <form action="base/sql.php" method="post">
+                <form action="base/insertsql.php" method="post">
                     <table class="table table-condensed col-md-3">
                         <thead>
                         <th colspan="2" class="text-center"><h3>Test</h3></th>                
