@@ -85,7 +85,7 @@ and open the template in the editor.
                 
                 echo '<table>';
                 echo '    <tr>';
-                echo '        <td>'.$sqlconsulta->titulo.'</td>';
+                echo '        <td>'.$sqlconsulta['titulo'].'</td>';
 //                echo '        <td>'.$sqlconsulta->.'</td>';                
                 echo '    </tr>';
                 echo '</table>';

@@ -37,4 +37,4 @@ require 'conexion.php';
 
 
 $conn->close();
-parent::redirect("index.php");
+header('Location: index.php');
