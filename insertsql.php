@@ -5,7 +5,7 @@ $descripcion = $_POST['descripcion'];
 $tabla = $_POST['tabla'];
 $icono = $_POST['icono'];
 $autor = $_POST['autor'];
-$autor = $_POST['anio'];
+$anio = $_POST['anio'];
 $num_preguntas = $_POST['num_preguntas'];
 $ultima_actualiza = $_POST['ultima_actualiza'];
 //print 'llego:'. $titulo .'descripcion:  '. $descripcion;
@@ -26,7 +26,7 @@ require 'conexion.php';
             `num_preguntas`,
             `ultima_actualiza`)
             VALUES
-            ('$titulo', '$descripcion', '$tabla', '$icono', '$autor', '$num_preguntas', '$ultima_actualiza');";
+            ('$titulo', '$descripcion', '$tabla', '$icono', '$autor', '$anio ', '$num_preguntas', '$ultima_actualiza');";
 
     if ($conn->query($sql) === TRUE) {
         echo "Registro Agregado";
