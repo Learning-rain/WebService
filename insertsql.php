@@ -1,5 +1,5 @@
 <?php
-$id = $_POST('id');
+$id = $_POST['id'];
 $titulo = $_POST['titulo'];
 $descripcion = $_POST['descripcion'];
 $tabla = $_POST['tabla'];
