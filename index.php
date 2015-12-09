@@ -76,6 +76,7 @@ and open the template in the editor.
             <div class="col-md-4"></div>
             <div class="col-md-12">
                 <?php
+                require 'conexion.php';
                 $sqlconsulta = "select * from test";
                 if ($conn->query($sqlconsulta) === TRUE) {
                     echo "Registro Agregado";
