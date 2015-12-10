@@ -77,16 +77,16 @@ and open the template in the editor.
             <div class="col-md-12">
                 <?php
                 require 'conexion.php';
-                $sql = "select * from test;";
+               
 
-                if ($conn->query($sqlt) === TRUE) {
+                if ($conn->query($sqlConsulta) === TRUE) {
                     echo '<table>';
                     echo '    <tr>';
-                    echo '        <td>' . print_r($sql) . '</td>';
+                    echo '        <td>' . print_r($sqlConsulta) . '</td>';
                     echo '    </tr>';
                     echo '</table>';
                 } else {
-                    echo "Error: " . $conn->query($sqlt) . "<br>" . $conn->error;
+                    echo "Error: " . $conn->query($sqlConsulta) . "<br>" . $conn->error;
                 }
                 $conn->close();
                 ?>
