@@ -1,4 +1,5 @@
 <?php
+
 //$id = $_POST['id'];
 $titulo = $_POST['titulo'];
 $descripcion = $_POST['descripcion'];
@@ -13,7 +14,7 @@ $ultima_actualiza = $_POST['ultima_actualiza'];
 require 'conexion.php';
 
 
-    $sql = "INSERT INTO test
+$sql = "INSERT INTO test
             (`titulo`,
             `descripcion`,
             `tabla`,
@@ -25,13 +26,10 @@ require 'conexion.php';
             VALUES
             ('$titulo', '$descripcion', '$tabla', '$icono', '$autor', '$anio ', '$num_preguntas', '$ultima_actualiza');";
 
-    if ($conn->query($sql) === TRUE) {
-        echo "Registro Agregado";
-    } else {
-        echo "Error: " . $sql . "<br>" . $conn->error;
-    }
-
-
-
+if ($conn->query($sql) === TRUE) {
+    echo "Registro Agregado";
+} else {
+    echo "Error: " . $sql . "<br>" . $conn->error;
+}
 $conn->close();
 header('Location: index.php');
