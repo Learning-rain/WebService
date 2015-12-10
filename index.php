@@ -72,9 +72,9 @@ and open the template in the editor.
                         </tbody>
                     </table>
                 </form>
+                <div class="col-md-4"></div>
             </div>
-            <div class="col-md-4"></div>
-            <div class="col-md-12">
+                        <div class="col-md-12">
                 <?php
                 require 'conexion.php';
                 $sqlConsulta = "select * from test;";                
