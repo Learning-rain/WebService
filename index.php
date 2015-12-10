@@ -87,8 +87,7 @@ and open the template in the editor.
                     echo '</table>';
                 } else {
                     echo "Error: " . $conn->query($sqlConsulta) . "<br>" . $conn->error;
-                }
-                $conn->close();
+                }                
                 ?>
             </div>
         </div>
