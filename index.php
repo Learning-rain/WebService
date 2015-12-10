@@ -78,11 +78,11 @@ and open the template in the editor.
                 <?php
                 require 'conexion.php';
                
-
+                $sqlConsulta = "select * from test;";
                 if ($conn->query($sqlConsulta) === TRUE) {
-                    echo '<table>';
+                    echo '<table class="table table-responsive>';
                     echo '    <tr>';
-                    echo '        <td>' . print_r($sqlConsulta) . '</td>';
+                    echo '        <td>' . $sqlConsulta['titulo'] . '</td>';
                     echo '    </tr>';
                     echo '</table>';
                 } else {
