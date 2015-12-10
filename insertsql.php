@@ -12,9 +12,6 @@ $ultima_actualiza = $_POST['ultima_actualiza'];
 
 require 'conexion.php';
 
-//$sql = "SELECT * FROM test";
-//$result = $conn->query($sql);
-//print_r($result);
 
     $sql = "INSERT INTO test
             (`titulo`,
