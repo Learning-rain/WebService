@@ -77,17 +77,12 @@ and open the template in the editor.
             <div class="col-md-12">
                 <?php
                 require 'conexion.php';
-               
-                $sqlConsulta = "select * from test;";
-                if ($conn->query($sqlConsulta) === TRUE) {
-                    echo '<table class="table table-responsive>';
-                    echo '    <tr>';
-                    echo '        <td>' . $sqlConsulta['titulo'] . '</td>';
-                    echo '    </tr>';
-                    echo '</table>';
-                } else {
-                    echo "Error: " . $conn->query($sqlConsulta) . "<br>" . $conn->error;
-                }                
+                $sqlConsulta = "select * from test;";                
+                echo '<table class="table table-responsive>';
+                echo '    <tr>';
+                echo '        <td>' . $sqlConsulta['titulo'] . '</td>';
+                echo '    </tr>';
+                echo '</table>';
                 ?>
             </div>
         </div>
