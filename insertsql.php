@@ -28,8 +28,11 @@ $sql = "INSERT INTO test
 
 if ($conn->query($sql) === TRUE) {
     echo "Registro Agregado";
+    $consulta = "SELECT * FROM test;";
+    $resultado = $conn->query($consulta);
+    print_r($resultado);
 } else {
     echo "Error: " . $sql . "<br>" . $conn->error;
 }
 $conn->close();
-header('Location: index.php');
+//header('Location: index.php');
