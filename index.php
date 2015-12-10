@@ -78,7 +78,7 @@ and open the template in the editor.
                 <?php
                 require 'conexion.php';
                 $sqlconsulta = "SELECT * FROM test";
-                $resultconsulta = $conn->query($sql);
+                $resultconsulta = $conn->query($sqlconsulta);
                 
                 if ($conn->query($resultconsulta) === TRUE) {
                     echo '<table>';
