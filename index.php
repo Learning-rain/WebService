@@ -12,7 +12,7 @@ and open the template in the editor.
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
         <style>
             *{
-                border: 2px dashed red;
+                /*border: 2px dashed red;*/
             }
             .tdTit{
                 width: 160px;
@@ -77,7 +77,7 @@ and open the template in the editor.
             <div class="col-md-12">
                 <?php
                 require 'conexion.php';
-                $sqlconsulta = "select * from test";
+                $sqlconsulta = "select * from test;";
                 if ($conn->query($sqlconsulta) === TRUE) {
                     echo '<table>';
                     echo '    <tr>';
