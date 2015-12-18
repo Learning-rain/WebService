@@ -16,5 +16,5 @@ if ($conn->query($sql) === TRUE) {
 $conn->close();
 foreach ($resultado as $value)
    {
-   print_r($value);
+   echo $value;
    }
