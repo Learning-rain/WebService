@@ -30,10 +30,10 @@ and open the template in the editor.
                         <th colspan="2" class="text-center"><h3>Test</h3></th>                
                         </thead>
                         <tbody>
-                            <tr>
+<!--                            <tr>
                                 <td class="tdTit">Id</td>
                                 <td><input type="number" name="id"></td>
-                            </tr>
+                            </tr>-->
                             <tr>
                                 <td>Título</td>
                                 <td><input type="text" name="titulo" size="100" placeholder="Título"></td>
