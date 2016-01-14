@@ -24,7 +24,7 @@ and open the template in the editor.
             <?php // include 'base/sql.php'; ?>
             <div class="col-md-12">
                 <div class="col-md-5"></div>
-                <form action="insertsql.php" method="POST">
+                <form action="insertsql.php" method="POST" enctype="multipart/form-data">
                     <table class="table table-condensed col-md-3">
                         <thead>
                         <th colspan="2" class="text-center"><h3>Test</h3></th>                
@@ -44,12 +44,13 @@ and open the template in the editor.
                             </tr>
                             <tr>
                                 <td>Tabla (URL)</td>
-                                <td><input type="url" size="100" placeholder="url de tabla" name="tabla"></td>
+                                <td><input type="file" name="tablaToUpload" id="tablaToUpload"></td>
                             </tr>
                             <tr>
                                 <td>Icono (URL)</td>
-                                <td><input type="url" size="100" placeholder="url de icono" name="icono"></td>
+                                <td><input type="file" name="fileToUpload" id="fileToUpload"></td>
                             </tr>
+                            <!--<tr><td colspan="2" class="text-center"><input type="submit" value="Cargar Imagen" class="btn"></td></tr>-->
                             <tr>
                                 <td>Autor</td>
                                 <td><input type="text" size="100" placeholder="Autor" name="autor"></td>
