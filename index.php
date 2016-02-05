@@ -10,6 +10,7 @@ and open the template in the editor.
         <title></title>
         <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" type="text/css" rel="stylesheet">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" type="text/javascript"></script>
+        <script src="https://code.jquery.com/jquery-2.2.0.js" type="text/javascript"></script>
         <style>
             *{
                 /*border: 2px dashed red;*/
@@ -78,3 +79,6 @@ and open the template in the editor.
         </div>
     </body>
 </html>
+<script type="text/javascript">
+
+</script>
