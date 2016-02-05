@@ -36,7 +36,7 @@ if (file_exists($target_file)) {
     $uploadOk = 0;
 }
 // Check file size
-if ($_FILES["fileToUpload"]["size"] > 500000) {
+if ($_FILES["fileToUpload"]["size"] > 1000000) {
     echo "Sorry, your file is too large.";
     $uploadOk = 0;
 }
@@ -44,20 +44,6 @@ if ($_FILES["fileToUpload"]["size"] > 500000) {
 if ($imageFileType != "jpg" && $imageFileType != "png" && $imageFileType != "jpeg" && $imageFileType != "gif") {
     echo "Sorry, only JPG, JPEG, PNG & GIF files are allowed.";
     $uploadOk = 0;
-//**subir csv**//
-
-//    if (substr($tabla, -3) == 'csv') {
-//        $target_dirTabla = "tabla/";
-//        $target_fileTabla = $target_dirTabla . basename($_FILES["tablaToUpload"]["name"]);
-//        if (file_exists($target_fileTabla)) {
-//            echo "Sorry, file already exists.";
-//        } else {
-//            move_uploaded_file($_FILES["tablaToUpload"]["tmp_name"], $target_fileTabla);
-//            $valoratbla = $_FILES["tablaToUpload"]["tmp_name"];
-//            print "archivo".$valortbla
-//        }
-//    } else {echo "El archivo no es csv";}
-//**fin subir csv**//
 }
 // Check if $uploadOk is set to 0 by an error
 if ($uploadOk == 0) {
